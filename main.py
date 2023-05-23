@@ -3,7 +3,7 @@ from flask import Flask
 from app.adapters.database import db
 # _importar controladores
 from app.controllers.user_controller import user_controller
-# from app.controllers.product_controller import product_controller
+from app.controllers.supplier_controller import supplier_controller
 
 
 # _Inicializamos el metodo flask_
@@ -17,7 +17,7 @@ db.init_app(app)
 
 # _realizar registro blueprint de los controladores
 app.register_blueprint(user_controller)
-# app.register_blueprint(product_controller)
+app.register_blueprint(supplier_controller)
 
 
 if __name__ == '__main__':

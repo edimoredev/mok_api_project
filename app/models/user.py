@@ -19,7 +19,7 @@ class User(db.Model):
     email = db.Column(db.String(50), nullable=False)
 
     def __init__(self, name, email):
-        """_Funcion inicializador de variables_
+        """_Funcion inicializador de variables que recibe por parametro el name y email del usuario_
 
         Args:
             name (string): _Nombre del usuario_
