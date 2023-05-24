@@ -5,7 +5,7 @@ from app.adapters.database import db
 from app.controllers.user_controller import user_controller
 from app.controllers.supplier_controller import supplier_controller
 from app.controllers.product_controller import product_controller
-
+from app.controllers.customer_controller import customer_controller
 
 # _Inicializamos el metodo flask_
 app = Flask(__name__)
@@ -20,6 +20,7 @@ db.init_app(app)
 app.register_blueprint(user_controller)
 app.register_blueprint(supplier_controller)
 app.register_blueprint(product_controller)
+app.register_blueprint(customer_controller)
 
 
 if __name__ == '__main__':
