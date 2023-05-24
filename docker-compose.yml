@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:12
+    environment:
+      - POSTGRES_DB=apimok
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  web:
+    build: .
+    command: python main.py
+    volumes:
+      - .:/mok_api_project
+    ports:
+      - '5432:5432'
+    depends_on:
+      - db
