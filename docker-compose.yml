@@ -1,19 +1,18 @@
 version: '3'
-
 services:
-  app:
-    build: .
-    ports:
-      - '5000:5000'
-    volumes:
-      - .:/app
-    depends_on:
-      - db
-
   db:
     image: postgres:latest
     environment:
+      - POSTGRES_DB=apimok
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=apimok
-      - POSTGRES_HOST=db
+
+  app:
+    build: .
+    command: python main.py 0.0.0.0:5000
+    volumes:
+      - .:/mok_api_project
+    ports:
+      - '5000:5000'
+    depends_on:
+      - db
