@@ -1,4 +1,6 @@
+# importar db del adaptador
 from app.adapters.database import db
+# importar supplier
 from app.models.supplier import Supplier
 
 
@@ -68,7 +70,7 @@ class SupplierRepository:
             supplier_id (integer): id unico para la proveedora
 
         Returns:
-            supplier: retornara las proveedoras que esten disponibles
+            supplier: retornara la proveedora eliminada
         """
         supplier = self.get_supplier_by_id(supplier_id)
         if supplier:

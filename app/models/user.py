@@ -1,3 +1,4 @@
+# importar db del adaptador
 from app.adapters.database import db
 
 

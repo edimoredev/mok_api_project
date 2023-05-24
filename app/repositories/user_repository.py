@@ -1,4 +1,6 @@
+#  importar db del adaptador
 from app.adapters.database import db
+# importar Users
 from app.models.user import User
 
 
@@ -65,7 +67,7 @@ class UserRepository:
             user_id (integer): id unico para el usuario
 
         Returns:
-            usuario: retornara los usuarios que esten disponibles
+            usuario: retornara el usuario eliminado
         """
         user = self.get_user_by_id(user_id)
         if user:

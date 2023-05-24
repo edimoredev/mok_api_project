@@ -1,16 +1,17 @@
+# importar db del adaptador
 from app.adapters.database import db
 
 
 class Supplier(db.Model):
-    """_Clase Proveedoras_
+    """ Clase Supplier
 
     Args:
-        id: _llave primaria Integer, contiene el numero identificador de la proveedora_
-        name: _nombre del usuario, de tipo string_
-        email: _correo del usuario, de tipo string_
+        id:  llave primaria Integer, contiene el numero identificador de la proveedora 
+        name:  nombre de la proveedora, de tipo string 
+        email:  correo de la proveedora, de tipo string 
 
     Returns:
-        _dic_: _retorna un diccionario serializado de los campos id, name, address y telephone de la proveedora_
+        dic: retorna un diccionario serializado de los campos id, name, address y telephone de la proveedora
     """
     __tablename__ = 'suppliers'
 
@@ -20,22 +21,22 @@ class Supplier(db.Model):
     telephone = db.Column(db.String(20), nullable=False)
 
     def __init__(self, name, address, telephone):
-        """_Funcion inicializador de variables que recibe por parametro name, address y telephone de pa proveedora_
+        """ Funcion inicializador de variables que recibe por parametro name, address y telephone de pa proveedora_
 
         Args:
-            name (string): _Nombre de la proveedora_
-            address (string): _Direccion de la proveedora_
-            telephone (string): _Telefono de la proveedora_
+            name (string): Nombre de la proveedora
+            address (string): Direccion de la proveedora
+            telephone (string): Telefono de la proveedora
         """
         self.name = name
         self.address = address
         self.telephone = telephone
 
     def serialize(self):
-        """_Funcion que serializa los datos de la proveedora_
+        """Funcion que serializa los datos de la proveedora
 
         Returns:
-            _dic_: _datos del la proveedora_
+            dic: datos del la proveedora
         """
         return {
             'id': self.id,
