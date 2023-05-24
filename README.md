@@ -76,6 +76,39 @@ ejemplo
 
 ![image](https://github.com/edimoredev/mok_api_project/assets/125479887/50eea2c8-b757-4f68-8678-a3173c4efc97)
 
+DOCKER 
+
+* Se crea los archivos docker-compose.yml y dockerfile, con su respectiva configuración
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/d78b7f05-acab-48fe-b80c-6a070d78755b)
+
+* se realiza el levantamiento del contenedor  docker compose "docker compose up"
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/d3808f53-1a5f-4841-bd31-a736107770a1)
+
+* Arranque del servicio 
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/01380cf2-194d-4751-bb1d-2a54fd5398d8)
+
+* comprobación del servicio
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/3670ec34-da55-42b0-a347-84a3011b3084)
+
+* insertar un usuario
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/a588ac0e-b4d0-4e84-82e7-805b9e5e4cb2)
+
+* Agregando una proveedora
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/2afa61df-3a91-4e82-bc46-1cb12f0b8087)
+
+* agregando un producto
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/70604c76-ed42-4149-a7ac-2d42db63526d)
+
+* consultando los productos
+
+![image](https://github.com/edimoredev/mok_api_project/assets/125479887/3f8e8988-3c9c-47a8-b622-c72f3a177c07)
 
 
 
