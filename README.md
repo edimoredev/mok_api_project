@@ -1,10 +1,10 @@
 # API
 
-# Descripción Proyecto
+Descripción Proyecto
 
 Consideraciones
 
- No es necesario completar todo el examen, según el avance se evaluará el
+No es necesario completar todo el examen, según el avance se evaluará el
 conocimiento de la persona.
  El examen se presenta en un repositorio publico con su respectivo Docker-
 Compose para poder realizar la ejecución y validación.
@@ -37,6 +37,7 @@ a su preferencia, Kafka, RabbitMQ) y vía HTTP (circuit break).
 Nota: 
 * El proyecto se crea con una base de datos POSTGRES, nombre de la base de datos "apimok".
 * Se crea una carpeta con nombre mermaiddb, la cual contiene el MER y el DER, de la base de datos
+* se debe asignar una contraseña al archivo config.py para la base de datos
 
 urls api
 
