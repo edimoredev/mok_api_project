@@ -1,0 +1,32 @@
+erDiagram
+
+
+users{
+int id PK
+varcahr(50) name
+varchar(50) email
+}
+
+customers{
+int id PK
+varcahr(50) name
+varchar(50) email
+}
+
+supplier{
+int id PK
+varcahr(50) name
+varcahr(50) address
+varcahr(50) telephone
+}
+
+
+products{
+int id PK
+varcahr(50) name
+varchar(50) price
+int  supplier_id FK "Ref:supplier(id)"
+}
+
+
+products }o--||supplier : supplier_id
